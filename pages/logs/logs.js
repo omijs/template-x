@@ -4,7 +4,7 @@ import store from '../../store/index'
 
 const util = require('../../utils/util.js')
 
-create(store, {
+create.Page(store, {
   use: ['logs'],
   onLoad: function () {
     this.store.data.logs = (wx.getStorageSync('logs') || []).map(log => {

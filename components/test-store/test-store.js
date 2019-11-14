@@ -1,7 +1,7 @@
 import create from '../../utils/create'
 
 
-create({
+create.Component({
   use: ['logs'],
   computed: {
     logsLength() {
